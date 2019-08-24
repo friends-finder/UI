@@ -24,7 +24,7 @@ header {
     .buttons {
       display: flex;
       justify-content: space-evenly;
-      margin-top: 3%;
+      margin-top: 8%;
       
       button {
         .button();
@@ -35,46 +35,29 @@ header {
   .middle-img {
     margin-left: 2%;
   }
-
-
-
-
-  // .middle-img {
-  //   width: 49%;
-    
-  //   img{
-  //   // margin-left: 2%;
-  //   width: 30%;
-  //   height: 30%;
-  //   border-radius: 8px;
-  //   }
-  // }
-  // .cta {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   width: 49%;
-
-  //   h1 {
-  //     font-size: 6rem;
-  //     display: flex;
-  //     text-align: center;
-  //   }
-
-  //   .buttons{
-  //     display: flex;
-  //     justify-content: center;
-  //       button {
-  //       .button();
-  //     }
-  //   }
-  // }
 }
 
 
 .lower-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  max-width: 70%;
+  margin: 0 auto;
+  width: 90%;
+
+  .summary {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+  .summary-ex {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: .5% auto;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
 }
