@@ -1,0 +1,36 @@
+// .button(@pad-vert, @pad-horiz) {
+//     cursor: pointer;
+//     display: inline-block;
+//     padding: @pad-vert @pad-horiz;
+//     border-radius: 4px;
+//     color: @porcelain;
+//     background-color: @btn-bg-color;
+
+//     &:hover {
+//         color: @btn-bg-color;
+//         background-color: @porcelain;
+//     }
+
+// }
+
+.button() {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid @border-theme;
+    background-color: @bg-theme;
+    padding: 3.5% 5%;
+    color: @txt-theme;
+    width: auto;
+    a {
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    &:hover {
+        background-color: @txt-theme;
+        a {
+            color:@oasis;
+        }
+    }
+}
