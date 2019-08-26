@@ -25,17 +25,23 @@
     
     .about-a {
         display:flex;
+        justify-content: space-between;
         border-bottom: 1px dashed @border-theme;
     }
 
     .about-b {
         display: flex;
+        justify-content: space-between;
         flex-direction: row-reverse;
         border-bottom: 1px dashed @border-theme;
     }
 
     div {
         .bio {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+
             h3 {
                 color: @h-color;
                 font-size: 1.8rem;
@@ -52,8 +58,8 @@
         .links {
             display: flex;
             justify-content: center;
-            align-content: flex-end;
-            margin: auto;
+            width: auto;
+            margin: auto 13%;
             
             button {
                 .button();
