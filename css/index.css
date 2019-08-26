@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -125,4 +121,80 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  color: black;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+nav .logo {
+  font-size: 3rem;
+}
+nav .nav-bar {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2% auto;
+}
+nav .nav-bar a {
+  display: flex;
+  margin: 0 0 0 6%;
+  text-decoration: none;
+  color: black;
+}
+.middle-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+}
+.middle-content img {
+  margin-left: 2%;
+  width: 30%;
+  height: 30%;
+}
+.cta {
+  font-size: 6rem;
+  width: 20%;
+  text-align: center;
+}
+.cta .button2 {
+  border: 1px solid blue;
+  background-color: white;
+  padding: 3.5% 5%;
+}
+.cta .button2 a {
+  text-decoration: none;
+  color: black;
+}
+.lower-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 70%;
 }
