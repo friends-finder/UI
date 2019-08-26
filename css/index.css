@@ -146,6 +146,10 @@ h5 {
   width: 100%;
   margin: 0 auto;
 }
+a :visited :hover :active :link {
+  text-decoration: none;
+  color: #243063;
+}
 nav {
   width: 100%;
   display: flex;
@@ -249,15 +253,17 @@ header img {
 #about-h2 {
   color: black;
   display: flex;
-  width: 75%;
-  margin: 2.5% auto;
+  width: 65%;
+  margin: 2.5% auto 0 auto;
   font-size: 3.5rem;
+  border-bottom: 1px dashed #5467ca;
+  padding-bottom: 3%;
 }
 .about-body {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  margin: 4% auto;
+  width: 65%;
+  margin: 0 auto 4% auto;
 }
 .about-body img {
   border-radius: 8px;
@@ -267,26 +273,14 @@ header img {
   height: auto;
   margin: 3%;
 }
-.about-body .about-a {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dashed #5467ca;
-}
-.about-body .about-b {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  border-bottom: 1px dashed #5467ca;
-}
 .about-body div .bio {
   display: flex;
   flex-direction: column;
-  width: 75%;
 }
 .about-body div .bio h3 {
   color: black;
   font-size: 1.8rem;
-  margin: 4% auto;
+  margin: 5% 0 5% 0;
 }
 .about-body div .bio p {
   color: black;
@@ -295,9 +289,6 @@ header img {
 }
 .about-body div .links {
   display: flex;
-  justify-content: center;
-  width: auto;
-  margin: auto 13%;
 }
 .about-body div .links button {
   cursor: pointer;
@@ -306,6 +297,7 @@ header img {
   background-color: #91c7e2;
   padding: 3.5% 5%;
   color: #243063;
+  margin: 5% 3%;
   padding: 1% 3%;
   font-size: 1.2rem;
   width: auto;
@@ -324,4 +316,17 @@ header img {
 }
 .about-body div .links button a {
   font-size: 1.2rem;
+}
+.about-body .about-a {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #5467ca;
+  padding-right: 3%;
+}
+.about-body .about-b {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-bottom: 1px dashed #5467ca;
+  padding-left: 3%;
 }
