@@ -3,10 +3,20 @@ nav {
   display: flex;
   justify-content: space-between;
 
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   h1 {
     font-size: 3rem;
     width: 49%;
     margin: 1% auto;
+
+    @media @mobile {
+      
+    }
   }
   .nav-bar {
     width: 49%;
@@ -14,12 +24,30 @@ nav {
     justify-content: flex-end;
     margin: 2% auto;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     a {
       display: flex;
 
       margin: 0 0 0 6%;
       text-decoration: none;
       color: @p-color;
+
+      @media @mobile {
+        border-bottom: 1px solid @border-theme;
+        font-size: 1.4rem;
+        width: 100%;
+        margin: 1% auto;
+        padding-bottom: 1.8%;
+        justify-content: center
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
