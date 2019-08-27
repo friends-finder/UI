@@ -276,6 +276,7 @@ header img {
 .about-body div .bio {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .about-body div .bio h3 {
   color: black;
@@ -293,29 +294,25 @@ header img {
 .about-body div .links button {
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid #5467ca;
-  background-color: #91c7e2;
-  padding: 3.5% 5%;
-  color: #243063;
-  margin: 5% 3%;
+  border: 1px dashed #5467ca;
+  background-color: #FAEDC3;
+  margin: 25% 3% 10% 3%;
   padding: 1% 3%;
-  font-size: 1.2rem;
+  color: #243063;
   width: auto;
 }
 .about-body div .links button a {
   text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 .about-body div .links button:hover {
   background-color: #243063;
 }
 .about-body div .links button:hover a {
   text-decoration: none;
-  color: #FAEDC3;
-}
-.about-body div .links button a {
   font-size: 1.2rem;
+  color: #FAEDC3;
 }
 .about-body .about-a {
   display: flex;
