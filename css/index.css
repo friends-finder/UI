@@ -146,6 +146,10 @@ h5 {
   width: 100%;
   margin: 0 auto;
 }
+a :visited :hover :active :link {
+  text-decoration: none;
+  color: #243063;
+}
 nav {
   width: 100%;
   display: flex;
@@ -219,6 +223,7 @@ header img {
   background-color: #243063;
 }
 .middle-content .cta .buttons button:hover a {
+  text-decoration: none;
   color: #FAEDC3;
 }
 .middle-content .middle-img {
@@ -245,6 +250,84 @@ header img {
   font-size: 1.3rem;
   line-height: 2rem;
 }
+<<<<<<< HEAD
+#about-h2 {
+  color: black;
+  display: flex;
+  width: 65%;
+  margin: 2.5% auto 0 auto;
+  font-size: 3.5rem;
+  border-bottom: 1px dashed #5467ca;
+  padding-bottom: 3%;
+}
+.about-body {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto 4% auto;
+}
+.about-body img {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 3%;
+}
+.about-body div .bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.about-body div .bio h3 {
+  color: black;
+  font-size: 1.8rem;
+  margin: 5% 0 5% 0;
+}
+.about-body div .bio p {
+  color: black;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+.about-body div .links {
+  display: flex;
+}
+.about-body div .links button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px dashed #5467ca;
+  background-color: #FAEDC3;
+  margin: 25% 3% 10% 3%;
+  padding: 1% 3%;
+  color: #243063;
+  width: auto;
+}
+.about-body div .links button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.about-body div .links button:hover {
+  background-color: #243063;
+}
+.about-body div .links button:hover a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #FAEDC3;
+}
+.about-body .about-a {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #5467ca;
+  padding-right: 3%;
+}
+.about-body .about-b {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-bottom: 1px dashed #5467ca;
+  padding-left: 3%;
+=======
 .index-header {
   border-radius: 8px;
 }
@@ -309,4 +392,5 @@ header img {
 }
 .feature-middle .personality h1 {
   font-size: 2rem;
+>>>>>>> master
 }
