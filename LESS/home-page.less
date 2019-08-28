@@ -1,6 +1,26 @@
 header {
+
   img {
     border-radius: 8px;
+  }
+
+  .index-header {
+    width: 100%;
+    height: auto;
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  .index-header-m {
+    display:none;
+
+    @media @mobile {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -29,11 +49,21 @@ header {
       button {
         .button();
       }
+
+      .b-l {
+        @media @mobile {
+          display: none;
+        }
+      }
     }
   }
 
   .middle-img {
     margin-left: 2%;
+
+    @media @mobile {
+      display: none;
+    }
   }
 }
 
