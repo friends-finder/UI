@@ -15,7 +15,8 @@ nav {
     margin: 1% auto;
 
     @media @mobile {
-      
+      display: flex;
+      justify-content: center;
     }
   }
   .nav-bar {
@@ -35,13 +36,21 @@ nav {
       text-decoration: none;
       color: @p-color;
 
+      &:hover {
+        font-size: +110%;
+      }
+
       @media @mobile {
         border-bottom: 1px solid @border-theme;
         font-size: 1.4rem;
         width: 100%;
         margin: 1% auto;
         padding-bottom: 1.8%;
-        justify-content: center
+        justify-content: center;
+
+        &:hover {
+          font-size: +160%;
+        }
       }
     }
 
@@ -49,5 +58,15 @@ nav {
       flex-direction: column;
       align-items: center;
     }
+  }
+}
+
+.index-header-m {
+  display: none;
+  @media @mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 }
