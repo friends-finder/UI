@@ -8,6 +8,16 @@
     font-size: 3.5rem;
     border-bottom: 1px dashed @border-theme;
     padding-bottom: 3%;
+
+    @media @mobile {
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        width: auto;
+        margin: .5% auto 2.5% auto;
+        border-bottom: 1px solid @border-theme;
+        height: 6vh;
+    }
 }
 
 .about-body {
@@ -16,13 +26,23 @@
     width: 65%;
     margin: 0 auto 4% auto;
 
+    @media @mobile {
+        width: 95%;
+    }
+
     img {
         border-radius: 8px;
         display: flex;
         align-items: center;
-        width: auto;
-        height: auto;
+        width: 80%;
+        height: 80%;
         margin: 3%;
+
+        @media @mobile {
+            width: 98%;
+            height: auto;
+            margin: 3% auto;
+        }
     }
 
     div {
@@ -31,9 +51,15 @@
             flex-direction: column;
             justify-content: space-evenly;
 
+            @media @mobile {
+                justify-content: flex-start;
+            }
+
             h3 {
+                display: flex;
+                justify-content: center;
                 color: @h-color;
-                font-size: 1.8rem;
+                font-size: 2.1rem;
                 margin: 5% 0 5% 0;
             }
             
@@ -59,10 +85,20 @@
                 color: @txt-theme;
                 width: auto;
 
+                @media @mobile {
+                    margin: 4% auto;
+                    padding: 2% 10%;
+                    border: 1px solid @border-theme;
+                }
+
                 a {
                   text-decoration: none;
                   font-size: 1.2rem;
                   font-weight: 300;
+
+                  @media @mobile {
+                      font-weight: 600;
+                  }
                 }
             
                 &:hover {
@@ -83,6 +119,11 @@
         justify-content: space-between;
         border-bottom: 1px dashed @border-theme;
         padding-right: 3%;
+
+        @media @mobile {
+            flex-direction: column;
+            padding: 0;
+        }
     }
 
     .about-b {
@@ -91,6 +132,19 @@
         flex-direction: row-reverse;
         border-bottom: 1px dashed @border-theme;
         padding-left: 3%;
+
+        @media @mobile {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .links {
+            justify-content: flex-end;
+        }
     }
 
 }
+
+
+// Mobile
+

@@ -172,6 +172,11 @@ nav h1 {
   width: 49%;
   margin: 1% auto;
 }
+@media (max-width: 500px) {
+  nav h1 {
+    width: auto;
+  }
+}
 nav .nav-bar {
   width: 49%;
   display: flex;
@@ -321,28 +326,58 @@ header .index-header-m {
   border-bottom: 1px dashed #5467ca;
   padding-bottom: 3%;
 }
+@media (max-width: 500px) {
+  #about-h2 {
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: auto;
+    margin: 0.5% auto 2.5% auto;
+    border-bottom: 1px solid #5467ca;
+    height: 6vh;
+  }
+}
 .about-body {
   display: flex;
   flex-direction: column;
   width: 65%;
   margin: 0 auto 4% auto;
 }
+@media (max-width: 500px) {
+  .about-body {
+    width: 95%;
+  }
+}
 .about-body img {
   border-radius: 8px;
   display: flex;
   align-items: center;
-  width: auto;
-  height: auto;
+  width: 80%;
+  height: 80%;
   margin: 3%;
+}
+@media (max-width: 500px) {
+  .about-body img {
+    width: 98%;
+    height: auto;
+    margin: 3% auto;
+  }
 }
 .about-body div .bio {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .about-body div .bio {
+    justify-content: flex-start;
+  }
+}
 .about-body div .bio h3 {
+  display: flex;
+  justify-content: center;
   color: black;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   margin: 5% 0 5% 0;
 }
 .about-body div .bio p {
@@ -363,10 +398,22 @@ header .index-header-m {
   color: #243063;
   width: auto;
 }
+@media (max-width: 500px) {
+  .about-body div .links button {
+    margin: 4% auto;
+    padding: 2% 10%;
+    border: 1px solid #5467ca;
+  }
+}
 .about-body div .links button a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 300;
+}
+@media (max-width: 500px) {
+  .about-body div .links button a {
+    font-weight: 600;
+  }
 }
 .about-body div .links button:hover {
   background-color: #243063;
@@ -382,12 +429,27 @@ header .index-header-m {
   border-bottom: 1px dashed #5467ca;
   padding-right: 3%;
 }
+@media (max-width: 500px) {
+  .about-body .about-a {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 .about-body .about-b {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   border-bottom: 1px dashed #5467ca;
   padding-left: 3%;
+}
+@media (max-width: 500px) {
+  .about-body .about-b {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.about-body .about-b .links {
+  justify-content: flex-end;
 }
 .index-header {
   border-radius: 8px;
