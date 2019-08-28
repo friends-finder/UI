@@ -194,6 +194,9 @@ nav .nav-bar a {
   text-decoration: none;
   color: black;
 }
+nav .nav-bar a:hover {
+  font-size: 110%;
+}
 @media (max-width: 500px) {
   nav .nav-bar a {
     border-bottom: 1px solid #5467ca;
@@ -203,11 +206,25 @@ nav .nav-bar a {
     padding-bottom: 1.8%;
     justify-content: center;
   }
+  nav .nav-bar a:hover {
+    font-size: 160%;
+  }
 }
 @media (max-width: 500px) {
   nav .nav-bar {
     flex-direction: column;
     align-items: center;
+  }
+}
+.index-header-m {
+  display: none;
+}
+@media (max-width: 500px) {
+  .index-header-m {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 }
 footer div {
@@ -525,32 +542,74 @@ header .index-header-m {
 .index-header {
   border-radius: 8px;
 }
+@media (max-width: 500px) {
+  .index-header {
+    display: none;
+  }
+}
 .feature-main {
   display: flex;
-  margin: 3% 0;
   flex-wrap: nowrap;
+  justify-content: center;
   padding-bottom: 3%;
   border-bottom: 1px dashed grey;
 }
+@media (max-width: 500px) {
+  .feature-main {
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 6%;
+  }
+}
 .feature-main .feat {
   font-size: 1.5rem;
-  width: 60%;
-  margin-left: 5%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .feature-main .feat {
+    width: 90%;
+  }
 }
 .feature-main .feat h1 {
-  font-size: 2.5rem;
+  color: black;
+  display: flex;
+  width: 65%;
+  margin: 2.5% auto 0 5%;
+  font-size: 3.5rem;
+}
+@media (max-width: 500px) {
+  .feature-main .feat h1 {
+    font-size: 2.5rem;
+  }
+}
+.feature-main .feat p {
+  color: black;
+  display: flex;
+  width: 100%;
+  margin: 2.5% auto 0 5%;
 }
 .feature-middle {
   display: flex;
-  margin: 3% 0;
   flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .feature-middle {
+    justify-content: flex-start;
+  }
 }
 .feature-middle .filter {
   width: 30%;
   padding: 3%;
   font-size: 1.5rem;
-  margin-left: 5%;
   margin-top: 1%;
+}
+@media (max-width: 500px) {
+  .feature-middle .filter {
+    width: 100%;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 6%;
+  }
 }
 .feature-middle .filter h1 {
   font-size: 2rem;
@@ -562,14 +621,87 @@ header .index-header-m {
   border-radius: 3%;
   margin-top: 3%;
 }
+@media (max-width: 500px) {
+  .feature-middle .features-img {
+    display: none;
+  }
+}
+.feature-middle .beat-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .feature-middle .beat-mobile {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    height: 50%;
+    margin: 0 auto;
+    align-content: center;
+    margin-top: 3%;
+  }
+}
 .feature-middle .timeline {
-  width: 30%;
   font-size: 1.5rem;
-  margin-left: 35%;
   margin-top: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 28%;
+}
+@media (max-width: 500px) {
+  .feature-middle .timeline {
+    width: 100%;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 6%;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 0;
+  }
 }
 .feature-middle .timeline h1 {
   font-size: 2rem;
+}
+.feature-middle .timeline img {
+  width: 28%;
+  height: auto;
+  margin: 0;
+  border-radius: 3%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .feature-middle .timeline img {
+    display: none;
+  }
+}
+.feature-middle .timeline .adventure {
+  display: none;
+}
+@media (max-width: 500px) {
+  .feature-middle .timeline .adventure {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+}
+.feature-middle .timeline p {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .feature-middle .timeline p {
+    width: 100%;
+  }
+}
+.feature-middle .timeline .time-p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  .feature-middle .timeline .time-p {
+    margin: 0;
+    padding: 0 3%;
+  }
 }
 .feature-middle .beach-img {
   width: 20%;
@@ -577,12 +709,33 @@ header .index-header-m {
   margin: 0;
   border-radius: 3%;
 }
+@media (max-width: 500px) {
+  .feature-middle .beach-img {
+    display: none;
+  }
+}
 .feature-middle .personality {
   width: 30%;
   padding: 3%;
   font-size: 1.5rem;
-  margin-left: 5%;
   margin-top: 1%;
+}
+@media (max-width: 500px) {
+  .feature-middle .personality {
+    width: 100%;
+  }
+}
+.feature-middle .personality .fist-bump {
+  display: none;
+}
+@media (max-width: 500px) {
+  .feature-middle .personality .fist-bump {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 3%;
+    height: auto;
+  }
 }
 .feature-middle .personality h1 {
   font-size: 2rem;
