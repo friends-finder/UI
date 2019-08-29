@@ -3,10 +3,15 @@ nav {
   display: flex;
   justify-content: space-between;
 
+  @media @tablet {
+    width: 99%;
+    justify-content: left;
+  }
+
   @media @mobile {
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   h1 {
@@ -14,8 +19,15 @@ nav {
     width: 49%;
     margin: 1% auto;
 
+    @media @tablet {
+      width: auto;
+      margin: 1% 2%;
+      
+    }
+
     @media @mobile {
       width: auto;
+      margin: 1% auto;
     }
   }
   .nav-bar {
@@ -23,11 +35,18 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin: 2% auto;
+
     @media @tablet {
-      margin-right: 2%;
+      justify-content: space-evenly;
+      width: auto;
+      margin: 2% 1%;
+      flex-grow: 2;
     }
+
     @media @mobile {
+      justify-content: flex-end;
       width: 100%;
+      margin: 2% auto;
     }
 
     a {
@@ -41,11 +60,16 @@ nav {
         font-size: +110%;
       }
 
+      @media @tablet {
+        font-size: 1.2rem;
+        margin: 1% auto;
+        justify-content: space-evenly;
+      }
+
       @media @mobile {
         border-bottom: 1px solid @border-theme;
         font-size: 1.4rem;
         width: 100%;
-        margin: 1% auto;
         padding-bottom: 1.8%;
         justify-content: center;
 
