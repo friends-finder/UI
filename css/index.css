@@ -151,6 +151,11 @@ h5 {
     max-width: 515px;
   }
 }
+@media (max-width: 900px) {
+  .container {
+    width: 900px;
+  }
+}
 a :visited :hover :active :link {
   text-decoration: none;
   color: #243063;
@@ -744,6 +749,7 @@ header .index-header-m {
   font-size: 1.5rem;
   width: 50%;
 }
+
 @media (max-width: 515px) {
   .feature-main .feat {
     width: 90%;
@@ -773,6 +779,7 @@ header .index-header-m {
   justify-content: center;
 }
 @media (max-width: 515px) {
+
   .feature-middle {
     justify-content: flex-start;
   }
