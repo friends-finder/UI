@@ -7,14 +7,19 @@
 [Task Organization](https://trello.com/b/sTShoQIY/friend-finder)
 
 ### GitHub Repositories ###
-[GitHub UI](https://github.com/friends-finder/UI)
+[GitHub UI](https://github.com/friends-finder/UI) 
+
 [GitHub FE](https://github.com/friends-finder/FE)
 
 #### The Team ####
 [James Starks - Team Lead](https://github.com/Shadowborn)
+
 [Sable Childs - Front End](https://github.com/sablemadison)
+
 [Jashele Tillman - Front End](https://github.com/jasheloper)
+
 [Cody Hayes - User Interface](https://github.com/Cody-Hayes97)
+
 [Jeffrey Orndorff - User Interface](https://github.com/Jeffreyo3)
 
 
