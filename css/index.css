@@ -317,8 +317,6 @@ header .index-header-m {
   flex-direction: column;
   justify-content: center;
   margin-right: 2%;
-  animation: delay 2s;
-  animation: fadeIn 2.5s ease-in;
 }
 @media (max-width: 900px) {
   .middle-content .cta {
@@ -431,7 +429,6 @@ header .index-header-m {
 }
 .middle-content .middle-img {
   margin-left: 2%;
-  animation: slideIn 1s;
 }
 @media (max-width: 900px) {
   .middle-content .middle-img .welcome-img {
@@ -463,7 +460,6 @@ header .index-header-m {
   justify-content: center;
   margin: 0 auto;
   width: 90%;
-  animation: textFade 3.5s;
 }
 .lower-content .summary {
   text-align: center;
@@ -499,52 +495,29 @@ header .index-header-m {
   font-size: 1.3rem;
   line-height: 2rem;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+@media (max-width: 900px) {
+  .lower-content .summary-ex p {
+    margin: 3% auto 0 auto;
   }
 }
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-  }
-  70% {
-    transform: translateX(30%);
-  }
-  75% {
-    transform: translateX(25%);
-  }
-  80% {
-    transform: translateX(20%);
-  }
-  100% {
-    transform: translateX(0);
+@media (max-width: 515px) {
+  .lower-content .summary-ex p {
+    margin: 0.5% auto;
   }
 }
-@keyframes delay {
-  from {
+.tab-mid-img {
+  display: none;
+}
+@media (max-width: 900px) {
+  .tab-mid-img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 515px) {
+  .tab-mid-img {
     display: none;
-  }
-  to {
-    display: flex;
-  }
-}
-@keyframes textFade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-
   }
 }
 #about-h2 {
