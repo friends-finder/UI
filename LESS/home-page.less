@@ -37,9 +37,33 @@ header {
     animation: delay 2s;
     animation: fadeIn 2.5s ease-in;
 
+    @media @tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2% auto;
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 2% 0 0;
+    }
+
     h1 {
       font-size: 6rem;
       text-align: center;
+
+      @media @tablet {
+        margin: auto 2.5%;
+        font-size: 5rem;
+        width: 54%;
+      }
+
+      @media @mobile {
+        margin: auto;
+        font-size: 4rem;
+        width: auto;
+      }
     }
 
     .buttons {
@@ -49,6 +73,16 @@ header {
 
       button {
         .button();
+
+        @media @tablet {
+          margin: 5% auto;
+          padding: 6% 12%;
+          border: 1px solid @border-theme;
+        }
+
+        @media @mobile {
+          .button();
+        }
       }
 
       .b-l {
@@ -61,11 +95,24 @@ header {
 
   .middle-img {
     margin-left: 2%;
-    animation: slideIn 1s;
-    @media @mobile {
       display: none;
+      
+      @media @tablet {
+        display: inline-block;
+        width: 100%;
+      }
+
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    @media @tablet {
+      margin: 0;
     }
   }
+
+  
 }
 
 .lower-content {
@@ -80,7 +127,27 @@ header {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 5%;
+
+    @media @tablet {
+      margin-bottom: 0;
+    }
+
+    @media @mobile {
+      margin: 0 0 5% 0;
+    }
+
+    p {
+      @media @tablet {
+        margin: 3% auto;
+      }
+
+      @media @mobile {
+        margin: 0;
+      }
+    }
   }
+
+
 
   .summary-ex {
     display: flex;
@@ -89,10 +156,17 @@ header {
       margin: 0.5% auto;
       font-size: 1.3rem;
       line-height: 2rem;
+
+      @media @tablet {
+        margin: 3% auto 0 auto;
+      }
+
+      @media @mobile {
+        margin: .5% auto;
+      }
     }
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
