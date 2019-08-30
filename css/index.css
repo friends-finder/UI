@@ -690,16 +690,17 @@ header .index-header-m {
   border-radius: 4px;
   border: 1px dashed #5467ca;
   background-color: #FAEDC3;
-  margin: 25% auto 10% auto;
-  padding: 1% 3%;
+  margin: auto 2%;
+  padding: 1em 1.5em;
   color: #243063;
-  width: auto;
+  width: 100%;
 }
 @media (max-width: 900px) {
   .about-body div .links button {
     margin: 5% auto;
     padding: 4% 8%;
     border: 1px solid #5467ca;
+    width: auto;
   }
 }
 @media (max-width: 515px) {
@@ -707,6 +708,7 @@ header .index-header-m {
     margin: 4% auto;
     padding: 3% 10%;
     border: 1px solid #5467ca;
+    width: auto;
   }
 }
 .about-body div .links button a {
