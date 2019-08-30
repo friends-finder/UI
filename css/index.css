@@ -376,7 +376,8 @@ header .index-header-m {
   background-color: #91c7e2;
   padding: 3.5% 5%;
   color: #243063;
-  width: auto;
+  width: 80%;
+  margin: 0 3%;
 }
 .middle-content .cta .buttons button a {
   text-decoration: none;
@@ -405,7 +406,8 @@ header .index-header-m {
     background-color: #91c7e2;
     padding: 3.5% 5%;
     color: #243063;
-    width: auto;
+    width: 80%;
+    margin: 0 3%;
   }
   .middle-content .cta .buttons button a {
     text-decoration: none;
