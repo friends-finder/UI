@@ -149,11 +149,15 @@ h5 {
 @media (max-width: 515px) {
   .container {
     max-width: 515px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 900px) {
   .container {
     width: 900px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 a :visited :hover :active :link {
@@ -682,7 +686,7 @@ header .index-header-m {
 }
 @media (max-width: 515px) {
   .about-body div .links {
-    margin: auto;
+    margin: 0;
   }
 }
 .about-body div .links button {
@@ -697,18 +701,18 @@ header .index-header-m {
 }
 @media (max-width: 900px) {
   .about-body div .links button {
-    margin: 5% auto;
-    padding: 4% 8%;
+    margin: 5% 3%;
+    padding: 1em 0.4em;
     border: 1px solid #5467ca;
-    width: auto;
+    width: 100%;
   }
 }
 @media (max-width: 515px) {
   .about-body div .links button {
-    margin: 4% auto;
-    padding: 3% 10%;
+    margin: 4% 3%;
+    padding: 1em 0.4em;
     border: 1px solid #5467ca;
-    width: auto;
+    width: 100%;
   }
 }
 .about-body div .links button a {
