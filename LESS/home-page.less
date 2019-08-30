@@ -1,5 +1,4 @@
 header {
-
   img {
     border-radius: 8px;
   }
@@ -14,7 +13,7 @@ header {
   }
 
   .index-header-m {
-    display:none;
+    display: none;
 
     @media @mobile {
       display: flex;
@@ -41,13 +40,13 @@ header {
     flex-direction: row;
     margin: 5% auto;
   }
-  
+
   .cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 2%;
-
+    animation: fadeIn 3s;
     @media @tablet {
       flex-direction: row;
       justify-content: space-between;
@@ -94,12 +93,12 @@ header {
         flex-direction: row;
         width: 100%;
       }
-      
+
       button {
         .button();
 
         @media @tablet {
-          margin: 5% auto;
+          margin: 5% 3% 5% 0%;
           padding: 6% 12%;
           border: 1px solid @border-theme;
         }
@@ -119,7 +118,7 @@ header {
 
   .middle-img {
     margin-left: 2%;
-
+    animation: slideIn 1.5s ease;
     .welcome-img {
       @media @tablet {
         display: none;
@@ -128,7 +127,7 @@ header {
 
     .tab-welcome-img {
       display: none;
-      
+
       @media @tablet {
         display: inline-block;
         width: 100%;
@@ -143,10 +142,7 @@ header {
       margin: 0;
     }
   }
-
-  
 }
-
 
 .lower-content {
   display: flex;
@@ -154,7 +150,7 @@ header {
   justify-content: center;
   margin: 0 auto;
   width: 90%;
-
+  animation: fadeIn 4s;
   .summary {
     text-align: center;
     font-size: 2rem;
@@ -179,13 +175,11 @@ header {
     }
   }
 
-
-
   .summary-ex {
     display: flex;
     flex-direction: column;
     p {
-      margin: .5% auto;
+      margin: 0.5% auto;
       font-size: 1.3rem;
       line-height: 2rem;
 
@@ -194,22 +188,66 @@ header {
       }
 
       @media @mobile {
-        margin: .5% auto;
+        margin: 0.5% auto;
       }
     }
   }
 }
 
-  .tab-mid-img {
-    display: none;
+.tab-mid-img {
+  display: none;
 
-    @media @tablet {
-      display: inline-block;
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    @media @mobile {
-      display: none;
-    }
+  @media @tablet {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
   }
+
+  @media @mobile {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes delay {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
