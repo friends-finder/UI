@@ -1,5 +1,4 @@
 header {
-
   img {
     border-radius: 8px;
   }
@@ -14,7 +13,7 @@ header {
   }
 
   .index-header-m {
-    display:none;
+    display: none;
 
     @media @mobile {
       display: flex;
@@ -30,23 +29,13 @@ header {
   margin: 5% auto;
   align-items: center;
 
-  @media @tablet {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @media @mobile {
-    display: flex;
-    flex-direction: row;
-    margin: 5% auto;
-  }
-  
   .cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 2%;
+    animation: delay 2s;
+    animation: fadeIn 2.5s ease-in;
 
     @media @tablet {
       flex-direction: row;
@@ -82,19 +71,6 @@ header {
       justify-content: space-evenly;
       margin-top: 8%;
 
-      @media @tablet {
-        flex-direction: column;
-        width: 45%;
-        // padding: 0 2%;
-        margin: 2% auto;
-      }
-
-      @media @mobile {
-        margin: 8% 0 0 0;
-        flex-direction: row;
-        width: 100%;
-      }
-      
       button {
         .button();
 
@@ -119,14 +95,6 @@ header {
 
   .middle-img {
     margin-left: 2%;
-
-    .welcome-img {
-      @media @tablet {
-        display: none;
-      }
-    }
-
-    .tab-welcome-img {
       display: none;
       
       @media @tablet {
@@ -147,13 +115,13 @@ header {
   
 }
 
-
 .lower-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   width: 90%;
+  animation: textFade 3.5s;
 
   .summary {
     text-align: center;
@@ -185,7 +153,7 @@ header {
     display: flex;
     flex-direction: column;
     p {
-      margin: .5% auto;
+      margin: 0.5% auto;
       font-size: 1.3rem;
       line-height: 2rem;
 
@@ -199,17 +167,52 @@ header {
     }
   }
 }
-
-  .tab-mid-img {
-    display: none;
-
-    @media @tablet {
-      display: inline-block;
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    @media @mobile {
-      display: none;
-    }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(30%);
+  }
+  75% {
+    transform: translateX(25%);
+  }
+  80% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes delay {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
