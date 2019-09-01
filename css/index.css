@@ -209,7 +209,7 @@ nav .nav-bar {
   nav .nav-bar {
     justify-content: space-evenly;
     width: auto;
-    margin: 2% 1%;
+    margin: 1% 1%;
     flex-grow: 2;
   }
 }
