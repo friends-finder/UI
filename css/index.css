@@ -183,7 +183,7 @@ nav {
   }
 }
 nav h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   width: 49%;
   margin: 1% auto;
 }
@@ -232,16 +232,16 @@ nav .nav-bar a:hover {
 @media (max-width: 900px) {
   nav .nav-bar a {
     font-size: 1.2rem;
-    margin: 1% auto;
+    margin: 2.5% auto;
     justify-content: space-evenly;
   }
 }
 @media (max-width: 515px) {
   nav .nav-bar a {
     border-bottom: 1px solid #5467ca;
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     width: 100%;
-    padding-bottom: 1.8%;
+    padding-bottom: 2.8%;
     justify-content: center;
   }
   nav .nav-bar a:hover {
@@ -340,12 +340,14 @@ header .index-header-m {
 .middle-content .cta h1 {
   font-size: 6rem;
   text-align: center;
+  line-height: 8rem;
 }
 @media (max-width: 900px) {
   .middle-content .cta h1 {
     margin: auto 2.5%;
     font-size: 5rem;
     width: 54%;
+    line-height: 6.5rem;
   }
 }
 @media (max-width: 515px) {
@@ -353,6 +355,7 @@ header .index-header-m {
     margin: auto;
     font-size: 4rem;
     width: auto;
+    line-height: 5rem;
   }
 }
 .middle-content .cta .buttons {
@@ -571,7 +574,7 @@ header .index-header-m {
 #about-h2 {
   color: black;
   display: flex;
-  width: 65%;
+  width: 75%;
   margin: 2.5% auto 0 auto;
   font-size: 3.5rem;
   border-bottom: 1px dashed #5467ca;
@@ -597,7 +600,7 @@ header .index-header-m {
 .about-body {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 75%;
   margin: 0 auto 4% auto;
 }
 @media (max-width: 900px) {
